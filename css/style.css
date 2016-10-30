@@ -118,53 +118,73 @@ nav i {
     padding:1em;
 }
 
-.lvl1 {
-    border-top-right-radius:1em;
-    border-top-left-radius:1em;
-}
-
 .container article{
-    padding:1em;
     margin-top:0.5em;
     border-radius:1em;
     background-color:#ffffff;
 
 }
-.container article > .lvl1 {
+
+.container article .header{
     width:100%;
+    box-sizing: border-box; /*Zorgt ervoor dat de padding de breedte van de box niet buiten zijn parent duwt, kijk maar wat er gebeurd zonder*/
     display:inline-flex;
     align-items:center;
-    justify-content:center;
-    background-color:#ff3268;
+    justify-content:space-between;
+    padding:0em 1em;
+    border-top-right-radius:1em;
+    border-top-left-radius:1em;
     color:#ffffff;
+}
 
-
+.container article > .lvl1 {
+    background-color:#ff3268;
 }
 
 .container article > .lvl1::before{
     content:"1";
+    display:flex;
+    min-width:2em;
+    min-height:2em;
+    border:0.15em solid #ffffff;
+    border-radius:0.5em;
+    justify-content:center;
+    align-items: center;
 }
 
 .container article > .lvl2 {
-    display:inline-flex;
     background-color:#00d66c;
-
 }
 
 .container article > .lvl2::before{
     content:"2";
+    display:flex;
+    min-width:2em;
+    min-height:2em;
+    border:0.15em solid #ffffff;
+    border-radius:0.5em;
+    justify-content:center;
+    align-items: center;
 }
 
 .container article > .lvl3 {
-    display:inline-flex;
     background-color:#2800a0;
-
 }
 
 .container article > .lvl3::before{
-    content:"2";
+    content:"3";
+    display:flex;
+    min-width:2em;
+    min-height:2em;
+    border:0.15em solid #ffffff;
+    border-radius:0.5em;
+    justify-content:center;
+    align-items: center;
 }
 
+.container article .post{
+    padding:1em;
+}
 
 
 /* MOBILE */
