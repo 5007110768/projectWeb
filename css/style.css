@@ -185,45 +185,40 @@ nav i {
     background-color:#ffffff;
 }
 
-/*je herhaalt deze code voor beide buttons. Het zou slimmer zijn als 1 algemene button class maakt voor de styling,
-dan een tweede class die je op hetzelfde button element gooit met een uitzondering: bijv een andere achtergrondkleur*/
-.btnLvl1 {
-    display:flex; /*Gebruik display:flex voor juist positioneren van elementen*/
-    width:25%;
-    min-width:8em;
-    background-color:#ff3268;
-    color:#ffffff;
-    border-radius:1.5em;
-    font-size:1em;
-    height:2em;
-    border:0em solid rgba(0,0,0,0.3);
-    margin:1.5em auto 1.5em auto;
-    text-transform:lowercase;
-    border-bottom:0.2em solid #ca2b55;
-    padding-left:1em;
-}
-
-.btnLvl1:active {
-    background-color:#ca2b55;
-}
-
-.btnLvl2 {
+.readBtn {
     display:flex;
     width:25%;
     min-width:8em;
-    background-color:#00d66c;
-    color:#ffffff;
     border-radius:1.5em;
     font-size:1em;
     height:2em;
-    border:0em solid rgba(0,0,0,0.3);
     margin:1.5em auto 1.5em auto;
     text-transform:lowercase;
-    border-bottom:0.2em solid #1e9162;
     padding-left:1em;
+
 }
 
-.btnLvl2:active {
+.readPink {
+    background-color:#ff3268;
+    color:#ffffff;
+    border:0em solid rgba(0,0,0,0.3);
+    border-bottom:0.2em solid #ca2b55;
+
+}
+
+.readPink:active {
+    background-color:#ca2b55;
+}
+
+.readGreen {
+    background-color:#00d66c;
+    color:#ffffff;
+    border:0em solid rgba(0,0,0,0.3);
+    border-bottom:0.2em solid #1e9162;
+
+}
+
+.readGreen:active {
     background-color:#1e9162;
 }
 
