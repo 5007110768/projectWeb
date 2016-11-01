@@ -186,6 +186,42 @@ nav i {
     padding:1em;
 }
 
+.btnLvl1 {
+    width:25%;
+    background-color:#ff3268;
+    color:#ffffff;
+    border-radius:1.5em;
+    font-size:1em;
+    height:2em;
+    border:0em solid rgba(0,0,0,0.3);
+    margin:1.5em auto 1.5em auto;
+    text-transform:lowercase;
+    border-bottom:0.2em solid #ca2b55;
+    padding-left:1em;
+}
+
+.btnLvl1:active {
+    background-color:#ca2b55;
+}
+
+.btnLvl2 {
+    width:25%;
+    background-color:#00d66c;
+    color:#ffffff;
+    border-radius:1.5em;
+    font-size:1em;
+    height:2em;
+    border:0em solid rgba(0,0,0,0.3);
+    margin:1.5em auto 1.5em auto;
+    text-transform:lowercase;
+    border-bottom:0.2em solid #1e9162;
+    padding-left:1em;
+}
+
+.btnLvl2:active {
+    background-color:#1e9162;
+}
+
 
 /* MOBILE */
 @media screen and (min-width: 0px) and (max-width: 639px) {
