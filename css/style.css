@@ -118,7 +118,7 @@ nav i {
     padding:1em;
 }
 
-.container article{
+.container article:nth-child(1){
     margin-top:0.5em;
     border-radius:1em;
     background-color:#ffffff;
@@ -220,6 +220,10 @@ nav i {
 
 .btnLvl2:active {
     background-color:#1e9162;
+}
+
+section article:nth-child(2) {
+    margin-top:1em;
 }
 
 
