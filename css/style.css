@@ -195,14 +195,15 @@ nav i {
     margin:1.5em auto 1.5em auto;
     text-transform:lowercase;
     padding-left:1em;
+    color:#ffffff;
+    border:0em solid rgba(0,0,0,0.3);
+    border-bottom:0.2em solid;
 
 }
 
 .readPink {
     background-color:#ff3268;
-    color:#ffffff;
-    border:0em solid rgba(0,0,0,0.3);
-    border-bottom:0.2em solid #ca2b55;
+    border-color:#ca2b55;
 
 }
 
@@ -211,10 +212,8 @@ nav i {
 }
 
 .readGreen {
-    background-color:#00d66c;
-    color:#ffffff;
-    border:0em solid rgba(0,0,0,0.3);
-    border-bottom:0.2em solid #1e9162;
+    background-color:#00d66cz;
+    border-color:#1e9162;
 
 }
 
