@@ -118,22 +118,15 @@ nav i {
     padding:1em;
 }
 
-.container article:nth-child(1){
-    margin-top:0.5em;
-    border-radius:1em;
-    background-color:#ffffff;
-
-}
-
 .container article .header{
     width:100%;
     box-sizing: border-box; /*Zorgt ervoor dat de padding de breedte van de box niet buiten zijn parent duwt, kijk maar wat er gebeurd zonder*/
+    border-top-right-radius:1em;
+    border-top-left-radius:1em;
     display:inline-flex;
     align-items:center;
     justify-content:space-between;
     padding:0em 1em;
-    border-top-right-radius:1em;
-    border-top-left-radius:1em;
     color:#ffffff;
 }
 
@@ -186,8 +179,18 @@ nav i {
     padding:1em;
 }
 
+.container .posts article { /*Je hebt geen nth-of-type nodig voor algemene styling, alleen wanneer je uitzonderingen/variatie wilt maken*/
+    margin-top:1em;
+    border-radius:1em;
+    background-color:#ffffff;
+}
+
+/*je herhaalt deze code voor beide buttons. Het zou slimmer zijn als 1 algemene button class maakt voor de styling,
+dan een tweede class die je op hetzelfde button element gooit met een uitzondering: bijv een andere achtergrondkleur*/
 .btnLvl1 {
+    display:flex; /*Gebruik display:flex voor juist positioneren van elementen*/
     width:25%;
+    min-width:8em;
     background-color:#ff3268;
     color:#ffffff;
     border-radius:1.5em;
@@ -205,7 +208,9 @@ nav i {
 }
 
 .btnLvl2 {
+    display:flex;
     width:25%;
+    min-width:8em;
     background-color:#00d66c;
     color:#ffffff;
     border-radius:1.5em;
@@ -220,10 +225,6 @@ nav i {
 
 .btnLvl2:active {
     background-color:#1e9162;
-}
-
-section article:nth-child(2) {
-    margin-top:1em;
 }
 
 
