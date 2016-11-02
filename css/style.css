@@ -116,6 +116,11 @@ nav i {
 .container {
     margin:auto;
     padding:1em;
+    color:#606060;
+}
+
+h3 a {
+    color:blue;
 }
 
 .container article .header{
@@ -212,7 +217,7 @@ nav i {
 }
 
 .readGreen {
-    background-color:#00d66cz;
+    background-color:#00d66c;
     border-color:#1e9162;
 
 }
@@ -221,6 +226,37 @@ nav i {
     background-color:#1e9162;
 }
 
+.readBlue {
+    background-color:#2800a0;
+    border-color:#120145;
+
+}
+
+.readBlue:active {
+    background-color:#120145;
+}
+
+.footerPost {
+    color:#99A3B7;
+    display:flex;
+    justify-content:space-between;
+}
+
+.fa-heart-o  {
+    content: "\f08a";
+    padding-right:.4em;
+}
+
+.fa-clock-o {
+    content:"\f017";
+    padding-right:.4em;
+}
+
+.wordCount span {
+    padding-right:.4em;
+    text-transform:uppercase;
+    font-weight:800;
+}
 
 /* MOBILE */
 @media screen and (min-width: 0px) and (max-width: 639px) {
