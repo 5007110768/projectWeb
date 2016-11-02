@@ -119,8 +119,25 @@ nav i {
     color:#606060;
 }
 
+section h3 {
+    font-size:.8em;
+    font-weight:100;
+}
+
 h3 a {
-    color:blue;
+    font-weight:600;
+}
+
+.linkPink:hover {
+    color:#ff3268;
+}
+
+.linkGreen:hover {
+    color:#00d66c;
+}
+
+.linkBlue:hover {
+    color:#2800a0;
 }
 
 .container article .header{
