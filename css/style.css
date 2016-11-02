@@ -113,7 +113,7 @@ nav i {
     color:rgba(0,0,0,0.3);
 }
 
-.container {
+.overview-container {
     margin:auto;
     padding:1em;
     color:#606060;
@@ -140,7 +140,7 @@ h3 a {
     color:#2800a0;
 }
 
-.container article .header{
+.overview-container article .header{
     width:100%;
     box-sizing: border-box; /*Zorgt ervoor dat de padding de breedte van de box niet buiten zijn parent duwt, kijk maar wat er gebeurd zonder*/
     border-top-right-radius:1em;
@@ -152,11 +152,11 @@ h3 a {
     color:#ffffff;
 }
 
-.container article > .lvl1 {
+.overview-container article > .lvl1 {
     background-color:#ff3268;
 }
 
-.container article > .lvl1::before{
+.overview-container article > .lvl1::before{
     content:"1";
     display:flex;
     min-width:2em;
@@ -167,11 +167,11 @@ h3 a {
     align-items: center;
 }
 
-.container article > .lvl2 {
+.overview-container article > .lvl2 {
     background-color:#00d66c;
 }
 
-.container article > .lvl2::before{
+.overview-container article > .lvl2::before{
     content:"2";
     display:flex;
     min-width:2em;
@@ -182,11 +182,11 @@ h3 a {
     align-items: center;
 }
 
-.container article > .lvl3 {
+.overview-container article > .lvl3 {
     background-color:#2800a0;
 }
 
-.container article > .lvl3::before{
+.overview-container article > .lvl3::before{
     content:"3";
     display:flex;
     min-width:2em;
@@ -197,11 +197,11 @@ h3 a {
     align-items: center;
 }
 
-.container article .post{
+.overview-container article .post{
     padding:1em;
 }
 
-.container .posts article { /*Je hebt geen nth-of-type nodig voor algemene styling, alleen wanneer je uitzonderingen/variatie wilt maken*/
+.overview-container .posts article { /*Je hebt geen nth-of-type nodig voor algemene styling, alleen wanneer je uitzonderingen/variatie wilt maken*/
     margin-top:1em;
     border-radius:1em;
     background-color:#ffffff;
@@ -273,6 +273,58 @@ h3 a {
     padding-right:.4em;
     text-transform:uppercase;
     font-weight:800;
+}
+
+.login-container{
+
+}
+
+.login-container header{
+    display:flex;
+    justify-content: center;
+    align-content:center;
+    margin:0;
+    font-size:0.8em;
+}
+
+.login-container ul{
+    display:inline-flex;
+
+}
+
+.login-container ul li{
+    display:flex;
+    padding:1em;
+
+    background-color:transparent;
+    color:#000000;
+    border:0.1em solid rgba(0,0,0,0.3);
+}
+.login-container ul li:first-child {
+    border-top-left-radius: 1em;
+}
+
+.login-container ul li:last-child {
+    border-top-right-radius: 1em;
+}
+
+.login-container .activeTab{
+    background-color:#ffffff;
+}
+
+.login-container form{
+    display:flex;
+    background-color:#ffffff;
+    
+}
+
+.login-container input{
+    width:100%;
+    height:2em;
+    font-size:1.5em;
+    background-color:transparent;
+    border:0.1em solid rgba(0,0,0,0.3);
+    border-radius:0.5em;
 }
 
 /* MOBILE */
