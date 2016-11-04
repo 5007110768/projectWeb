@@ -148,7 +148,7 @@ h3 a {
 
 .overview-container article .header{
     width:100%;
-    box-sizing: border-box; /*Zorgt ervoor dat de padding de breedte van de box niet buiten zijn parent duwt, kijk maar wat er gebeurd zonder*/
+    box-sizing: border-box;
     border-top-right-radius:1em;
     border-top-left-radius:1em;
     display:inline-flex;
@@ -207,7 +207,7 @@ h3 a {
     padding:1em;
 }
 
-.overview-container .posts article { /*Je hebt geen nth-of-type nodig voor algemene styling, alleen wanneer je uitzonderingen/variatie wilt maken*/
+.overview-container .posts article {
     margin-top:1em;
     border-radius:1em;
     background-color:#ffffff;
