@@ -290,11 +290,12 @@ h3 a {
     padding:0 1em 0 1em;
     margin-bottom:0;
     width:100%;
-    box-sizing:border-box; /*Zorgt ervoor dat de inhoud (child elements) -nooit- buiten de breedte van de parent springt*/
+    box-sizing:border-box;
 }
 
 .login-container ul li{
     display:flex;
+    justify-content:center;
     width:100%;
     /*z-index:-1;*/ /*Hierdoor verdwijnen de tabs -achter- en niet -voor- de login-content*/
     flex-grow:1;
@@ -392,10 +393,6 @@ anders zie je dat het streepje in de login-content loopt*/
     outline:none;
 }
 
-/*.login-container .extra-password-label{
-    display:none;
-}*/
-
 .login-container .login-btn{
     display:flex;
     justify-content:center;
@@ -413,6 +410,10 @@ anders zie je dat het streepje in de login-content loopt*/
 
     background-color: #ff3268;
     border-color: #ca2b55;
+}
+
+.login-btn:active {
+    background-color:#ca2b55;
 }
 
 .login-container .register-btn{
@@ -446,26 +447,12 @@ anders zie je dat het streepje in de login-content loopt*/
 
 /*Of zoals je ontwerp (je moet alleen fa-2x toevoegen bij het facebookicoon in html:*/
 
-/*.login-container .facebook-btn{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    width: 25%;
-    min-width:15em;
-    border-radius: 0.5em;
-    font-size: 1em;
-    height: 3.5em;
-    margin: 1.5em auto 1.5em auto;
-    text-align:center;
-    color: #ffffff;
-    border: 0em solid rgba(0,0,0,0.3);
-
-    background-color: #3b5998;
-    border-color: #233a6a;
-}*/
-
 .login-container .facebook-btn i{
     margin-right:0.5em;
+}
+
+.facebook-btn:active {
+    background-color:#233a6a;
 }
 
 /* MOBILE */
