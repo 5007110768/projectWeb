@@ -2,33 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link href="css/nexa.transfronter/stylesheet.css" rel="stylesheet">
     <title>Filter</title>
 </head>
+<header>
+    <nav>
+        <a href="index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        <h1>Filteren</h1>
+        <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+    </nav>
+</header>
 <body>
 <li>
     <ul>
         <nav class="filter">
             <form action="index.html" class="filter" method="get">
                 <fieldset>
-                    <legend>Filter op Thema:</legend>
+                    <legend><span class="bold">Filter op Genre:</span></legend>
                     <label>
-                        <input type="checkbox" name="Romantiek" value="Romantiek">Romantiek</label>
+                        <input type="checkbox" name="Detective" value="Detective">Detective</label>
                     <label>
                         <input type="checkbox" name="Horror" value="Horror">Horror</label>
                     <label>
-                        <input type="checkbox" name="Avontuur" value="Avontuur">Gore</label>
+                        <input type="checkbox" name="Actie" value="Actie">Actie</label>
                 </fieldset>
                 <fieldset>
-                    <legend>Filter op Auteur:</legend>
+                    <legend><span class="bold">Filter op Auteur:</span></legend>
                     <label>
                         <input type="checkbox" name="Molovich" value="Molovich">Molovich</label>
                     <label>
-                        <input type="checkbox" name="Luijten" value="Luijten">Hugo Luijten</label>
+                        <input type="checkbox" name="Jamie Jansen" value="Jamie Jansen">Jamie Jansen</label>
                     <label>
-                        <input type="checkbox" name="all" value="all">Elk</label>
+                        <input type="checkbox" name="Robin Jansen" value="Robin Jansen">Robin Jansen</label>
                 </fieldset>
                 <fieldset>
-                    <legend>Aantal woorden:</legend>
+                    <legend><span class="bold">Filter op kleur:</span></legend>
+                    <label>
+                        <input type="checkbox" name="roze" value="roze">Roze - Niveau 1</label>
+                    <label>
+                        <input type="checkbox" name="groen" value="groen">Groen - Niveau 2</label>
+                    <label>
+                        <input type="checkbox" name="blauw" value="blauw">Blauw - Niveau 3</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend><span class="bold">Aantal woorden:</span></legend>
                     <input type="range" name="worden" min="0" max="1000">
                     <button>Filter</button>
                 </fieldset>
