@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter</title>
+</head>
+<body>
+<li>
+    <ul>
+        <nav class="filter">
+            <form action="index.html" class="filter" method="get">
+                <fieldset>
+                    <legend>Filter op Thema:</legend>
+                    <label>
+                        <input type="checkbox" name="Romantiek" value="Romantiek">Romantiek</label>
+                    <label>
+                        <input type="checkbox" name="Horror" value="Horror">Horror</label>
+                    <label>
+                        <input type="checkbox" name="Avontuur" value="Avontuur">Gore</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Filter op Auteur:</legend>
+                    <label>
+                        <input type="checkbox" name="Molovich" value="Molovich">Molovich</label>
+                    <label>
+                        <input type="checkbox" name="Luijten" value="Luijten">Hugo Luijten</label>
+                    <label>
+                        <input type="checkbox" name="all" value="all">Elk</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Aantal woorden:</legend>
+                    <input type="range" name="worden" min="0" max="1000">
+                    <button>Filter</button>
+                </fieldset>
+            </form>
+        </nav>
+    </ul>
+</li>
+
+</body>
+</html>
