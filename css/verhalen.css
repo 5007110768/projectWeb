@@ -1,0 +1,116 @@
+/* Verhaal 1 */
+
+@media screen and (max-width: 40em) {
+    .paramobile {
+        max-width: 100%;
+    }
+    .paratablet {
+        display: none;
+    }
+    .paradesktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 40em) and (max-width: 60em) {
+    .paramobile {
+        display: none;
+    }
+    .paratablet {
+        max-width: 100%;
+    }
+    .paradesktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .paramobile {
+        display: none;
+    }
+    .paratablet {
+        display: none;
+    }
+    .paradesktop {
+        max-width: 100%;
+    }
+}
+
+
+/* Verhaal 2 */
+
+@media screen and (max-width: 40em) {
+    .neermobile {
+        max-width: 100%;
+    }
+    .neertablet {
+        display: none;
+    }
+    .neerdesktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 40em) and (max-width: 60em) {
+    .neermobile {
+        display: none;
+    }
+    .neertablet {
+        max-width: 100%;
+    }
+    .neerdesktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .neermobile {
+        display: none;
+    }
+    .neertablet {
+        display: none;
+    }
+    .neerdesktop {
+        max-width: 100%;
+    }
+}
+
+
+/* Verhaal 3 */
+
+@media screen and (max-width: 36em) {
+    .hardmobile {
+        max-width: 100%;
+        min-width: 100%:
+    }
+    .hardtablet {
+        display: none;
+    }
+    .harddesktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 36em) and (max-width: 60em) {
+    .hardmobile {
+        display: none;
+    }
+    .hardtablet {
+        max-width: 100%;
+    }
+    .harddesktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .hardmobile {
+        display: none;
+    }
+    .hardtablet {
+        display: none;
+    }
+    .harddesktop {
+        max-width: 100%;
+    }
+}
