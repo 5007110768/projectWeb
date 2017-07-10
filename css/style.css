@@ -1,1506 +1,657 @@
-/* MOBILE */
-@media screen and (min-width: 0px) and (max-width: 500px) {
-
-
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #f3e5d8;
-        font-family: Nexa, sans-serif;
-
-    }
-
-    body li {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-    }
-
-    body ul {
-        padding:0em;
-    }
-
-    a {
-        text-decoration: none;
-        color: #000;
-    }
-
-    button:focus {
-        outline: none;
-    }
-
-    h1, h2 {
-        text-transform: uppercase;
-    }
-
-    header {
-        width: 100%;
-        background-color: #f7f7f7;
-    }
-
-    header .title { /*Zijn er geen andere knoppen in de header? centreer dan de titel*/
-        justify-content: center;
-    }
-
-    nav {
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0em 1em;
-    }
-
-    nav a, nav h1 {
-        display: inline-flex;
-    }
-
-    nav i {
-        color: #2800a0;
-    }
-
-
-    fieldset {
-        margin-top:.5em;
-        display:flex;
-        border: 2px solid #ff3268;
-        border-radius: 8px;
-    }
-
-    fieldset:nth-child(4) input {
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    fieldset:nth-child(4) button {
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    div img {
-        width:100%;
-    }
-
-    .bold {
-        font-weight:800;
-        text-transform: uppercase;
-    }
-
-    .searchBar {
-        display: flex;
-        position: relative;
-    }
-
-    .searchBar input[type="search"] {
-        width: 100%;
-        border-radius: .5em;
-        font-size: 1em;
-        padding: .5em;
-        padding-left: 1em;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-right: 0em;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        outline: none;
-    }
-
-    .searchBar i {
-        color: #ffffff;
-    }
-
-    .searchBar button {
-        width: 7em;
-        border-radius: .5em;
-        font-size: 1em;
-        padding: .5em;
-        border: none;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        text-transform: uppercase;
-        font-size: .7em;
-        background-color: #ff3268;
-    }
-
-    .searchBar button:focus {
-        background-color: #ca2b55;
-    }
-
-    .sort {
-        position: relative;
-    }
-
-    .sort select {
-        width: 100%;
-        border-radius: .5em;
-        font-size: 1em;
-        height: 2em;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        outline: none;
-        margin-top: .5em;
-        text-transform: lowercase;
-        border-bottom: 0.2em solid rgba(0, 0, 0, 0.3);
-        padding-left: 1em;
-
-        /*REMOVE STANDARD ICON*/
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        text-indent: 1px;
-        text-overflow: '';
-    }
-
-    .sort i {
-        position: absolute;
-        right: 1em;
-        top: 0em;
-        pointer-events: none;
-        color: rgba(0, 0, 0, 0.3);
-    }
-
-    .posts {
-        min-width:18em;
-    }
-
-    .posts article {
-        margin:.5em;
-    }
-
-    .overview-container {
-        margin: auto;
-        padding: 1em;
-        color: #606060;
-    }
-
-    section h3 {
-        font-size: .8em;
-        font-weight: 100;
-    }
-
-    h3 a {
-        font-weight: 600;
-    }
-
-    .linkPink:hover {
-        color: #ff3268;
-    }
-
-    .linkGreen:hover {
-        color: #00d66c;
-    }
-
-    .linkBlue:hover {
-        color: #2800a0;
-    }
-
-    .overview-container article .header {
-        width: 100%;
-        box-sizing: border-box;
-        border-top-right-radius: 1em;
-        border-top-left-radius: 1em;
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0em 1em;
-        color: #ffffff;
-    }
-
-    .overview-container article > .lvl1 {
-        background-color: #ff3268;
-    }
-
-    .overview-container article > .lvl1::before {
-        content: "1";
-        display: flex;
-        min-width: 2em;
-        min-height: 2em;
-        border: 0.15em solid #ffffff;
-        border-radius: 0.5em;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .overview-container article > .lvl2 {
-        background-color: #00d66c;
-    }
-
-    .overview-container article > .lvl2::before {
-        content: "2";
-        display: flex;
-        min-width: 2em;
-        min-height: 2em;
-        border: 0.15em solid #ffffff;
-        border-radius: 0.5em;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .overview-container article > .lvl3 {
-        background-color: #2800a0;
-    }
-
-    .overview-container article > .lvl3::before {
-        content: "3";
-        display: flex;
-        min-width: 2em;
-        min-height: 2em;
-        border: 0.15em solid #ffffff;
-        border-radius: 0.5em;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .overview-container article .post {
-        padding: 1em;
-    }
-
-    .overview-container .posts article {
-        margin-top: 1em;
-        border-radius: 1em;
-        background-color: #ffffff;
-    }
-
-    .readBtn {
-        display: flex;
-        justify-content: center;
-        width: 25%;
-        min-width: 8em;
-        border-radius: 1.5em;
-        font-size: 1em;
-        height: 2em;
-        margin: 1.5em auto;
-        text-transform: lowercase;
-        color: #ffffff;
-        border: 0em solid rgba(0, 0, 0, 0.3);
-        border-bottom: 0.2em solid;
-
-    }
-
-    .readPink {
-        background-color: #ff3268;
-        border-color: #ca2b55;
-
-    }
-
-    .readPink:active {
-        background-color: #ca2b55;
-    }
-
-    .readGreen {
-        background-color: #00d66c;
-        border-color: #1e9162;
-
-    }
-
-    .readGreen:active {
-        background-color: #1e9162;
-    }
-
-    .readBlue {
-        background-color: #2800a0;
-        border-color: #120145;
-
-    }
-
-    .readBlue:active {
-        background-color: #120145;
-    }
-
-    .footerPost {
-        color: #99A3B7;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .fa-heart-o {
-        content: "\f08a";
-        padding-right: .4em;
-    }
-
-    .fa-clock-o {
-        content: "\f017";
-        padding-right: .4em;
-    }
-
-    .wordCount span {
-        padding-right: .4em;
-        text-transform: uppercase;
-        font-weight: 800;
-    }
-
-    .login-container {
-        position: relative;
-    }
-
-    .login-container ul {
-        display: inline-flex;
-        padding: 0 1em 0 1em;
-        margin-bottom: 0;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .login-container ul li {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        /*z-index:-1;*/ /*Hierdoor verdwijnen de tabs -achter- en niet -voor- de login-content*/
-        flex-grow: 1;
-        padding: 1em;
-        padding-bottom: 1.1em;
-
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-right: none;
-        border-bottom: none;
-        background-color: transparent;
-        color: #000000;
-        text-transform: lowercase;
-    }
-
-    .login-container ul li:first-child {
-        border-top-left-radius: 0.5em;
-    }
-
-    .login-container ul li:last-child {
-        border-top-right-radius: 0.5em;
-        /*Alle elementen missen een rechter border, behalve de last-child (dan krijg je tussen de elementen geen dubbele lijnen*/
-        border-right: 0.1em solid rgba(0, 0, 0, 0.3);
-    }
-
-    .login-container .activeTab {
-        position: relative;
-        z-index: 1; /*Zorgt ervoor dat de activeTab altijd bovenop de andere tabs ligt*/
-        background-color: #ffffff;
-        border-top-right-radius: 0.5em;
-        border-top-left-radius: 0.5em;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-bottom: 0;
-        margin: 0 -0.5em;
-        margin-bottom: 0.32em; /*Zorgt ervoor dat de onderkant van de activeTab net over de rand valt van de login content*/
-    }
-
-    /*Bij de eerste actieve tab is er geen margin met negatieve waarde, zodat deze net als de inactieve tabs achter
-    (of in dit geval -voor-) de login-content doorloopt. Border-rightstaat op none,
-    anders zie je dat het streepje in de login-content loopt*/
-    .login-container .activeTab:first-of-type {
-        margin-right: -0.5em;
-        margin-left: 0em;
-        border-right: none;
-        margin-bottom: 0;
-    }
-
-    /*Bij de laatste actieve tab is er geen margin met negatieve waarde, zodat deze net als de inactieve tabs achter
-    (of in dit geval -voor-) de login-content doorloopt. Border-left staat op none,
-    anders zie je dat het streepje in de login-content loopt*/
-    .login-container .activeTab:last-of-type {
-        margin-left: -0.5em;
-        margin-right: 0em;
-        border-left: none;
-        margin-bottom: 0;
-    }
-
-    .login-container .login-content {
-        padding: 1em;
-        margin: 1em;
-        margin-top: -0.4em;
-        background-color: #ffffff;
-        border-radius: 0.5em;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-    }
-
-    .login-container .login-content span {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 4em;
-        color: #ffffff;
-        background-color: #ff3268;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-bottom-left-radius: 0.5em;
-        border-top-left-radius: 0.5em;
-        border-right: none;
-    }
-
-    .login-container .login-content label {
-        display: flex;
-        margin-top: 1em;
-    }
-
-    .login-container input {
-        width: 100%;
-        height: 3em;
-        padding: 0 0.5em;
-        font-size: 1em;
-        background-color: transparent;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-bottom-right-radius: 0.5em;
-        border-top-right-radius: 0.5em;
-    }
-
-    .login-container input:focus {
-        outline: none;
-    }
-
-    .login-container .login-btn {
-        display: flex;
-        justify-content: center;
-        width: 25%;
-        min-width: 8em;
-        border-radius: 1.5em;
-        font-size: 1em;
-        height: 2em;
-        margin: 1.5em auto 1.5em auto;
-        text-transform: lowercase;
-        text-align: center;
-        color: #ffffff;
-        border: 0em solid rgba(0, 0, 0, 0.3);
-        border-bottom: 0.2em solid;
-
-        background-color: #ff3268;
-        border-color: #ca2b55;
-    }
-
-    .login-btn:active {
-        background-color: #ca2b55;
-    }
-
-    .login-container .register-btn {
-        display: none;
-    }
-
-    .login-container hr {
-        width: 100%;
-    }
-
-    .login-container .facebook-btn {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 25%;
-        min-width: 13em;
-        border-radius: 1.5em;
-        font-size: 1em;
-        height: 2em;
-        margin: 1.5em auto 1.5em auto;
-        text-transform: lowercase;
-        text-align: center;
-        color: #ffffff;
-        border: 0em solid rgba(0, 0, 0, 0.3);
-        border-bottom: 0.2em solid;
-
-        background-color: #3b5998;
-        border-color: #233a6a;
-    }
-
-    /*Of zoals je ontwerp (je moet alleen fa-2x toevoegen bij het facebookicoon in html:*/
-    .login-container .facebook-btn i {
-        margin-right: 0.5em;
-    }
-
-    .facebook-btn:active {
-        background-color: #233a6a;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3e5d8;
+    font-family: Nexa, sans-serif;
+
+}
+
+body li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+body ul {
+    padding:0em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:focus {
+  outline-color: #009cff;
+
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px #009cff;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+header {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+header.title {
+    justify-content: center;
+}
+
+nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 1em;
+}
+
+nav a, nav h1 {
+    display: inline-flex;
+}
+
+nav i {
+    color: #2800a0;
 }
 
 
-/* TABLET */
-@media screen and (min-width: 501px) and (max-width: 1050px) {
-
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #f3e5d8;
-        font-family: Nexa, sans-serif;
-
-    }
-
-    body li {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-    }
-
-    a {
-        text-decoration: none;
-        color: #000;
-    }
-
-    button:focus {
-        outline: none;
-    }
-
-    h1, h2 {
-        text-transform: uppercase;
-    }
-
-    header {
-        width: 100%;
-        background-color: #f7f7f7;
-    }
-
-    header .title { /*Zijn er geen andere knoppen in de header? centreer dan de titel*/
-        justify-content: center;
-    }
-
-    nav {
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0em 1em;
-    }
-
-    nav a, nav h1 {
-        display: inline-flex;
-    }
-
-    nav i {
-        color: #2800a0;
-    }
-
-    fieldset {
-        margin-top:.5em;
-        display:flex;
-        border: 2px solid #ff3268;
-        border-radius: 8px;
-    }
-
-    fieldset:nth-child(4) input {
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    fieldset:nth-child(4) button {
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    div img {
-        width:100%;
-    }
-
-    .bold {
-        font-weight:800;
-        text-transform: uppercase;
-    }
-
-    .posts article {
-        margin:.5em;
-        max-width:38em;
-        min-width:18em;
-        flex:1;
-
-    }
-
-    .posts {
-        display:flex;
-        flex-wrap:wrap;
-
-    }
-
-    .searchBar {
-        display: flex;
-        position: relative;
-    }
-
-    .searchBar input[type="search"] {
-        width: 100%;
-        border-radius: .5em;
-        font-size: 1em;
-        padding: .5em;
-        padding-left: 1em;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-right: 0em;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        outline: none;
-    }
-
-    .searchBar i {
-        color: #ffffff;
-    }
-
-    .searchBar button {
-        width: 7em;
-        border-radius: .5em;
-        font-size: 1em;
-        padding: .5em;
-        border: none;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        text-transform: uppercase;
-        font-size: .7em;
-        background-color: #ff3268;
-    }
-
-    .searchBar button:focus {
-        background-color: #ca2b55;
-    }
-
-    .sort {
-        position: relative;
-    }
-
-    .sort select {
-        width: 100%;
-        border-radius: .5em;
-        font-size: 1em;
-        height: 2em;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        outline: none;
-        margin-top: .5em;
-        text-transform: lowercase;
-        border-bottom: 0.2em solid rgba(0, 0, 0, 0.3);
-        padding-left: 1em;
-
-        /*REMOVE STANDARD ICON*/
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        text-indent: 1px;
-        text-overflow: '';
-    }
-
-    .sort i {
-        position: absolute;
-        right: 1em;
-        top: 0em;
-        pointer-events: none;
-        color: rgba(0, 0, 0, 0.3);
-    }
-
-    .overview-container {
-        margin: auto;
-        padding: 1em;
-        color: #606060;
-    }
-
-    section h3 {
-        font-size: .8em;
-        font-weight: 100;
-    }
-
-    h3 a {
-        font-weight: 600;
-    }
-
-    .linkPink:hover {
-        color: #ff3268;
-    }
-
-    .linkGreen:hover {
-        color: #00d66c;
-    }
-
-    .linkBlue:hover {
-        color: #2800a0;
-    }
-
-    .overview-container article .header {
-        width: 100%;
-        box-sizing: border-box;
-        border-top-right-radius: 1em;
-        border-top-left-radius: 1em;
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0em 1em;
-        color: #ffffff;
-    }
-
-    .overview-container article > .lvl1 {
-        background-color: #ff3268;
-    }
-
-    .overview-container article > .lvl1::before {
-        content: "1";
-        display: flex;
-        min-width: 2em;
-        min-height: 2em;
-        border: 0.15em solid #ffffff;
-        border-radius: 0.5em;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .overview-container article > .lvl2 {
-        background-color: #00d66c;
-    }
-
-    .overview-container article > .lvl2::before {
-        content: "2";
-        display: flex;
-        min-width: 2em;
-        min-height: 2em;
-        border: 0.15em solid #ffffff;
-        border-radius: 0.5em;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .overview-container article > .lvl3 {
-        background-color: #2800a0;
-    }
-
-    .overview-container article > .lvl3::before {
-        content: "3";
-        display: flex;
-        min-width: 2em;
-        min-height: 2em;
-        border: 0.15em solid #ffffff;
-        border-radius: 0.5em;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .overview-container article .post {
-        padding: 1em;
-    }
-
-    .overview-container .posts article {
-        margin-top: 1em;
-        border-radius: 1em;
-        background-color: #ffffff;
-    }
-
-    .readBtn {
-        display: flex;
-        justify-content: center;
-        width: 25%;
-        min-width: 8em;
-        border-radius: 1.5em;
-        font-size: 1em;
-        height: 2em;
-        margin: 1.5em auto;
-        text-transform: lowercase;
-        color: #ffffff;
-        border: 0em solid rgba(0, 0, 0, 0.3);
-        border-bottom: 0.2em solid;
-
-    }
-
-    .readPink {
-        background-color: #ff3268;
-        border-color: #ca2b55;
-
-    }
-
-    .readPink:active {
-        background-color: #ca2b55;
-    }
-
-    .readGreen {
-        background-color: #00d66c;
-        border-color: #1e9162;
-
-    }
-
-    .readGreen:active {
-        background-color: #1e9162;
-    }
-
-    .readBlue {
-        background-color: #2800a0;
-        border-color: #120145;
-
-    }
-
-    .readBlue:active {
-        background-color: #120145;
-    }
-
-    .footerPost {
-        color: #99A3B7;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .fa-heart-o {
-        content: "\f08a";
-        padding-right: .4em;
-    }
-
-    .fa-clock-o {
-        content: "\f017";
-        padding-right: .4em;
-    }
-
-    .wordCount span {
-        padding-right: .4em;
-        text-transform: uppercase;
-        font-weight: 800;
-    }
-
-    .login-container {
-        position: relative;
-    }
-
-    .login-container ul {
-        display: inline-flex;
-        padding: 0 1em 0 1em;
-        margin-bottom: 0;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .login-container ul li {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        /*z-index:-1;*/ /*Hierdoor verdwijnen de tabs -achter- en niet -voor- de login-content*/
-        flex-grow: 1;
-        padding: 1em;
-        padding-bottom: 1.1em;
-
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-right: none;
-        border-bottom: none;
-        background-color: transparent;
-        color: #000000;
-        text-transform: lowercase;
-    }
-
-    .login-container ul li:first-child {
-        border-top-left-radius: 0.5em;
-    }
-
-    .login-container ul li:last-child {
-        border-top-right-radius: 0.5em;
-        /*Alle elementen missen een rechter border, behalve de last-child (dan krijg je tussen de elementen geen dubbele lijnen*/
-        border-right: 0.1em solid rgba(0, 0, 0, 0.3);
-    }
-
-    .login-container .activeTab {
-        position: relative;
-        z-index: 1; /*Zorgt ervoor dat de activeTab altijd bovenop de andere tabs ligt*/
-        background-color: #ffffff;
-        border-top-right-radius: 0.5em;
-        border-top-left-radius: 0.5em;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-bottom: 0;
-        margin: 0 -0.5em;
-        margin-bottom: 0.32em; /*Zorgt ervoor dat de onderkant van de activeTab net over de rand valt van de login content*/
-    }
-
-    /*Bij de eerste actieve tab is er geen margin met negatieve waarde, zodat deze net als de inactieve tabs achter
-    (of in dit geval -voor-) de login-content doorloopt. Border-rightstaat op none,
-    anders zie je dat het streepje in de login-content loopt*/
-    .login-container .activeTab:first-of-type {
-        margin-right: -0.5em;
-        margin-left: 0em;
-        border-right: none;
-        margin-bottom: 0;
-    }
-
-    /*Bij de laatste actieve tab is er geen margin met negatieve waarde, zodat deze net als de inactieve tabs achter
-    (of in dit geval -voor-) de login-content doorloopt. Border-left staat op none,
-    anders zie je dat het streepje in de login-content loopt*/
-    .login-container .activeTab:last-of-type {
-        margin-left: -0.5em;
-        margin-right: 0em;
-        border-left: none;
-        margin-bottom: 0;
-    }
-
-    .login-container .login-content {
-        padding: 1em;
-        margin: 1em;
-        margin-top: -0.4em;
-        background-color: #ffffff;
-        border-radius: 0.5em;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-    }
-
-    .login-container .login-content span {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 4em;
-        color: #ffffff;
-        background-color: #ff3268;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-bottom-left-radius: 0.5em;
-        border-top-left-radius: 0.5em;
-        border-right: none;
-    }
-
-    .login-container .login-content label {
-        display: flex;
-        margin-top: 1em;
-    }
-
-    .login-container input {
-        width: 100%;
-        height: 3em;
-        padding: 0 0.5em;
-        font-size: 1em;
-        background-color: transparent;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-bottom-right-radius: 0.5em;
-        border-top-right-radius: 0.5em;
-    }
-
-    .login-container input:focus {
-        outline: none;
-    }
-
-    .login-container .login-btn {
-        display: flex;
-        justify-content: center;
-        width: 25%;
-        min-width: 8em;
-        border-radius: 1.5em;
-        font-size: 1em;
-        height: 2em;
-        margin: 1.5em auto 1.5em auto;
-        text-transform: lowercase;
-        text-align: center;
-        color: #ffffff;
-        border: 0em solid rgba(0, 0, 0, 0.3);
-        border-bottom: 0.2em solid;
-
-        background-color: #ff3268;
-        border-color: #ca2b55;
-    }
-
-    .login-btn:active {
-        background-color: #ca2b55;
-    }
-
-    .login-container .register-btn {
-        display: none;
-    }
-
-    .login-container hr {
-        width: 100%;
-    }
-
-    .login-container .facebook-btn {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 25%;
-        min-width: 13em;
-        border-radius: 1.5em;
-        font-size: 1em;
-        height: 2em;
-        margin: 1.5em auto 1.5em auto;
-        text-transform: lowercase;
-        text-align: center;
-        color: #ffffff;
-        border: 0em solid rgba(0, 0, 0, 0.3);
-        border-bottom: 0.2em solid;
-
-        background-color: #3b5998;
-        border-color: #233a6a;
-    }
-
-    /*Of zoals je ontwerp (je moet alleen fa-2x toevoegen bij het facebookicoon in html:*/
-    .login-container .facebook-btn i {
-        margin-right: 0.5em;
-    }
-
-    .facebook-btn:active {
-        background-color: #233a6a;
+fieldset {
+    margin-top:.5em;
+    display:flex;
+    border: 2px solid #ff3268;
+    border-radius: 8px;
+}
+
+fieldset:nth-child(4) input {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+fieldset:nth-child(4) button {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.bold {
+    font-weight:800;
+    text-transform: uppercase;
+}
+
+.searchBar {
+    display: flex;
+    position: relative;
+}
+
+.searchBar input[type="search"] {
+    width: 100%;
+    border-radius: .5em;
+    font-size: 1em;
+    padding: .5em;
+    padding-left: 1em;
+    border: 0.1em solid rgba(0, 0, 0, 0.3);
+    border-right: 0em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline: none;
+}
+
+.login-content input:focus {
+  box-shadow: 0px 0px 10px #009cff;
+  border-color: #009cff;
+}
+
+.searchBar input:focus {
+  box-shadow: 0px 0px 10px #009cff;
+  border-color: #009cff;
+}
+
+.searchBar i {
+    color: #ffffff;
+}
+
+.searchBar button {
+    width: 7em;
+    border-radius: .5em;
+    font-size: 1em;
+    padding: .5em;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-transform: uppercase;
+    font-size: .7em;
+    background-color: #ff3268;
+}
+
+.searchBar button:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px #009cff;
+}
+
+.sort {
+    position: relative;
+}
+
+.sort select {
+    width: 100%;
+    border-radius: .5em;
+    font-size: 1em;
+    height: 2em;
+    border: 0.1em solid rgba(0, 0, 0, 0.3);
+    outline: none;
+    margin-top: .5em;
+    text-transform: lowercase;
+    border-bottom: 0.2em solid rgba(0, 0, 0, 0.3);
+    padding-left: 1em;
+
+    /*REMOVE STANDARD ICON*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.sort select:focus {
+  box-shadow: 0px 0px 10px #009cff;
+}
+
+.sort i {
+    position: absolute;
+    right: 1em;
+    top: 0em;
+    pointer-events: none;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.overview-container {
+    margin: auto;
+    padding: 1em;
+    color: #606060;
+}
+
+section h3 {
+    font-size: .8em;
+    font-weight: 100;
+}
+
+h3 a {
+    font-weight: 600;
+}
+
+.linkPink:hover {
+    color: #ff3268;
+}
+
+.linkGreen:hover {
+    color: #00d66c;
+}
+
+.linkBlue:hover {
+    color: #2800a0;
+}
+
+.overview-container article .header {
+    width: 100%;
+    box-sizing: border-box;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 1em;
+    color: #ffffff;
+}
+
+.header.lvl1 {
+    background-color: #ff3268;
+}
+.header.lvl1::before {
+    content: "1";
+    display: flex;
+    min-width: 2em;
+    min-height: 2em;
+    border: 0.15em solid #ffffff;
+    border-radius: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.header.lvl2 {
+    background-color: #00d66c;
+}
+
+.header.lvl2::before {
+    content: "2";
+    display: flex;
+    min-width: 2em;
+    min-height: 2em;
+    border: 0.15em solid #ffffff;
+    border-radius: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.header.lvl3 {
+    background-color: #2800a0;
+}
+
+.header.lvl3::before {
+    content: "3";
+    display: flex;
+    min-width: 2em;
+    min-height: 2em;
+    border: 0.15em solid #ffffff;
+    border-radius: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-container article .post {
+    padding: 1em;
+}
+
+.overview-container .posts article {
+    margin-top: 1em;
+}
+
+.readBtn {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    min-width: 8em;
+    border-radius: 1.5em;
+    font-size: 1em;
+    height: 2em;
+    margin: 1.5em auto;
+    text-transform: lowercase;
+    color: #ffffff;
+    border: 0em solid rgba(0, 0, 0, 0.3);
+    border-bottom: 0.2em solid;
+
+}
+
+.readBtn:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px #009cff;
+}
+
+div img {
+    width:100%;
+}
+
+.readPink {
+    background-color: #ff3268;
+    border-color: #ca2b55;
+
+}
+
+.readPink:active {
+    background-color: #ca2b55;
+}
+
+.readGreen {
+    background-color: #00d66c;
+    border-color: #1e9162;
+
+}
+
+.readGreen:active {
+    background-color: #1e9162;
+}
+
+.readBlue {
+    background-color: #2800a0;
+    border-color: #120145;
+
+}
+
+.readBlue:active {
+    background-color: #120145;
+}
+
+.footerPost {
+    color: #99A3B7;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-heart-o {
+    content: "\f08a";
+    padding-right: .4em;
+}
+
+.fa-clock-o {
+    content: "\f017";
+    padding-right: .4em;
+}
+
+.wordCount span {
+    padding-right: .4em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.login-container {
+    position: relative;
+}
+
+.login-container ul {
+    display: inline-flex;
+    padding: 0 1em 0 1em;
+    margin-bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-container ul li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /*z-index:-1;*/ /*Hierdoor verdwijnen de tabs -achter- en niet -voor- de login-content*/
+    flex-grow: 1;
+    padding: 1em;
+    padding-bottom: 1.1em;
+
+    border: 0.1em solid rgba(0, 0, 0, 0.3);
+    border-right: none;
+    border-bottom: none;
+    background-color: transparent;
+    color: #000000;
+    text-transform: lowercase;
+}
+
+.login-container ul li:first-child {
+    border-top-left-radius: 0.5em;
+}
+
+.login-container ul li:last-child {
+    border-top-right-radius: 0.5em;
+    /*Alle elementen missen een rechter border, behalve de last-child (dan krijg je tussen de elementen geen dubbele lijnen*/
+    border-right: 0.1em solid rgba(0, 0, 0, 0.3);
+}
+
+.login-container .activeTab {
+    position: relative;
+    z-index: 1; /*Zorgt ervoor dat de activeTab altijd bovenop de andere tabs ligt*/
+    background-color: #ffffff;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border: 0.1em solid rgba(0, 0, 0, 0.3);
+    border-bottom: 0;
+    margin: 0 -0.5em;
+    margin-bottom: 0.32em; /*Zorgt ervoor dat de onderkant van de activeTab net over de rand valt van de login content*/
+}
+
+/*Bij de eerste actieve tab is er geen margin met negatieve waarde, zodat deze net als de inactieve tabs achter
+(of in dit geval -voor-) de login-content doorloopt. Border-rightstaat op none,
+anders zie je dat het streepje in de login-content loopt*/
+.login-container .activeTab:first-of-type {
+    margin-right: -0.5em;
+    margin-left: 0em;
+    border-right: none;
+    margin-bottom: 0;
+}
+
+/*Bij de laatste actieve tab is er geen margin met negatieve waarde, zodat deze net als de inactieve tabs achter
+(of in dit geval -voor-) de login-content doorloopt. Border-left staat op none,
+anders zie je dat het streepje in de login-content loopt*/
+.login-container .activeTab:last-of-type {
+    margin-left: -0.5em;
+    margin-right: 0em;
+    border-left: none;
+    margin-bottom: 0;
+}
+
+.login-container .login-content {
+    padding: 1em;
+    margin: 1em;
+    margin-top: -0.4em;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    border: 0.1em solid rgba(0, 0, 0, 0.3);
+}
+
+.login-container .login-content .input-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    color: #ffffff;
+    background-color: #ff3268;
+    border: 0.1em solid rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-right: none;
+}
+
+.login-container .login-content span {
+    display: flex;
+}
+
+.login-container input {
+    width: 100%;
+    height: 3em;
+    padding: 0 0.5em;
+    font-size: 1em;
+    background-color: transparent;
+    border: 0.1em solid rgba(0, 0, 0, 0.3);
+    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.login-container input:focus {
+    outline: none;
+}
+
+.login-container .login-btn {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    min-width: 8em;
+    border-radius: 1.5em;
+    font-size: 1em;
+    height: 2em;
+    margin: 1.5em auto 1.5em auto;
+    text-transform: lowercase;
+    text-align: center;
+    color: #ffffff;
+    border: 0em solid rgba(0, 0, 0, 0.3);
+    border-bottom: 0.2em solid;
+
+    background-color: #ff3268;
+    border-color: #ca2b55;
+}
+
+.login-btn:active {
+    background-color: #ca2b55;
+}
+
+.login-container .register-btn {
+    display: none;
+}
+
+.login-container hr {
+    width: 100%;
+}
+
+.login-container .facebook-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    min-width: 13em;
+    border-radius: 1.5em;
+    font-size: 1em;
+    height: 2em;
+    margin: 1.5em auto 1.5em auto;
+    text-transform: lowercase;
+    text-align: center;
+    color: #ffffff;
+    border: 0em solid rgba(0, 0, 0, 0.3);
+    border-bottom: 0.2em solid;
+
+    background-color: #3b5998;
+    border-color: #233a6a;
+}
+
+/*Of zoals je ontwerp (je moet alleen fa-2x toevoegen bij het facebookicoon in html:*/
+.login-container .facebook-btn i {
+    margin-right: 0.5em;
+}
+
+.facebook-btn:active {
+    background-color: #233a6a;
+}
+
+.post-container {
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.post-container .front, .post-container .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.post-container .front {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+
+}
+.post-container .back {
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 1em;
+
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.post-container .front img {
+    width: 150%;
+    height: 150%;
+    object-fit: cover;
+}
+
+.post-container .front .img-container:before {
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container h2 {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    padding: 1.5em;
+    line-height: 0;
+    border-radius: 5px;
+    border: 2px solid crimson;
+    margin: 0;
+}
+
+.post-container.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+}
+
+input::-webkit-input-placeholder {
+    color: pink;
+}
+
+.input-label {
+    display: block;
+    opacity: 0;
+    margin-top: 1.5em;
+    margin-left: .5em;
+    margin-bottom: .2em;
+}
+
+.input-label.test {
+    animation: move 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+        transform: translate(80px, 60px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px)
     }
 }
 
-/* DESKTOP */
-@media screen and (min-width: 1050px) {
-
-
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #f3e5d8;
-        font-family: Nexa, sans-serif;
-
-    }
-
-    body li {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-    }
-
-    body ul {
-        padding:0em;
-    }
-
-    a {
-        text-decoration: none;
-        color: #000;
-    }
-
-    button:focus {
-        outline: none;
-    }
-
-    h1, h2 {
-        text-transform: uppercase;
-    }
-
-    header {
-        width: 100%;
-        background-color: #f7f7f7;
-    }
-
-    header .title { /*Zijn er geen andere knoppen in de header? centreer dan de titel*/
-        justify-content: center;
-    }
-
-    nav {
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0em 1em;
-    }
-
-    nav a, nav h1 {
-        display: inline-flex;
-    }
-
-    nav i {
-        color: #2800a0;
-    }
-
-
-    fieldset {
-        margin-top:.5em;
-        display:flex;
-        border: 2px solid #ff3268;
-        border-radius: 8px;
-    }
-
-    fieldset:nth-child(4) input {
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    fieldset:nth-child(4) button {
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    div img {
-        width:100%;
-    }
-
-    .bold {
-        font-weight:800;
-        text-transform: uppercase;
-    }
-
-    .searchBar {
-        display: flex;
-        position: relative;
-    }
-
-    .searchBar input[type="search"] {
-        width: 100%;
-        border-radius: .5em;
-        font-size: 1em;
-        padding: .5em;
-        padding-left: 1em;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-right: 0em;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        outline: none;
-    }
-
-    .searchBar i {
-        color: #ffffff;
-    }
-
-    .searchBar button {
-        width: 7em;
-        border-radius: .5em;
-        font-size: 1em;
-        padding: .5em;
-        border: none;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        text-transform: uppercase;
-        font-size: .7em;
-        background-color: #ff3268;
-    }
-
-    .searchBar button:focus {
-        background-color: #ca2b55;
-    }
-
-    .sort {
-        position: relative;
-    }
-
-    .sort select {
-        width: 100%;
-        border-radius: .5em;
-        font-size: 1em;
-        height: 2em;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        outline: none;
-        margin-top: .5em;
-        text-transform: lowercase;
-        border-bottom: 0.2em solid rgba(0, 0, 0, 0.3);
-        padding-left: 1em;
-
-        /*REMOVE STANDARD ICON*/
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        text-indent: 1px;
-        text-overflow: '';
-    }
-
-    .sort i {
-        position: absolute;
-        right: 1em;
-        top: 0em;
-        pointer-events: none;
-        color: rgba(0, 0, 0, 0.3);
-    }
-
-    .posts {
-        min-width:18em;
-        display: flex;
-    }
-
-    .posts article {
-        margin:.5em;
-    }
-
-    .overview-container {
-        margin: auto;
-        padding: 1em;
-        color: #606060;
-    }
-
-    section h3 {
-        font-size: .8em;
-        font-weight: 100;
-    }
-
-    h3 a {
-        font-weight: 600;
-    }
-
-    .linkPink:hover {
-        color: #ff3268;
-    }
-
-    .linkGreen:hover {
-        color: #00d66c;
-    }
-
-    .linkBlue:hover {
-        color: #2800a0;
-    }
-
-    .overview-container article .header {
-        width: 100%;
-        box-sizing: border-box;
-        border-top-right-radius: 1em;
-        border-top-left-radius: 1em;
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0em 1em;
-        color: #ffffff;
-    }
-
-    .overview-container article > .lvl1 {
-        background-color: #ff3268;
-    }
-
-    .overview-container article > .lvl1::before {
-        content: "1";
-        display: flex;
-        min-width: 2em;
-        min-height: 2em;
-        border: 0.15em solid #ffffff;
-        border-radius: 0.5em;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .overview-container article > .lvl2 {
-        background-color: #00d66c;
-    }
-
-    .overview-container article > .lvl2::before {
-        content: "2";
-        display: flex;
-        min-width: 2em;
-        min-height: 2em;
-        border: 0.15em solid #ffffff;
-        border-radius: 0.5em;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .overview-container article > .lvl3 {
-        background-color: #2800a0;
-    }
-
-    .overview-container article > .lvl3::before {
-        content: "3";
-        display: flex;
-        min-width: 2em;
-        min-height: 2em;
-        border: 0.15em solid #ffffff;
-        border-radius: 0.5em;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .overview-container article .post {
-        padding: 1em;
-    }
-
-    .overview-container .posts article {
-        margin-top: 1em;
-        border-radius: 1em;
-        background-color: #ffffff;
-    }
-
-    .readBtn {
-        display: flex;
-        justify-content: center;
-        width: 25%;
-        min-width: 8em;
-        border-radius: 1.5em;
-        font-size: 1em;
-        height: 2em;
-        margin: 1.5em auto;
-        text-transform: lowercase;
-        color: #ffffff;
-        border: 0em solid rgba(0, 0, 0, 0.3);
-        border-bottom: 0.2em solid;
-
-    }
-
-    .readPink {
-        background-color: #ff3268;
-        border-color: #ca2b55;
-
-    }
-
-    .readPink:active {
-        background-color: #ca2b55;
-    }
-
-    .readGreen {
-        background-color: #00d66c;
-        border-color: #1e9162;
-
-    }
-
-    .readGreen:active {
-        background-color: #1e9162;
-    }
-
-    .readBlue {
-        background-color: #2800a0;
-        border-color: #120145;
-
-    }
-
-    .readBlue:active {
-        background-color: #120145;
-    }
-
-    .footerPost {
-        color: #99A3B7;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .fa-heart-o {
-        content: "\f08a";
-        padding-right: .4em;
-    }
-
-    .fa-clock-o {
-        content: "\f017";
-        padding-right: .4em;
-    }
-
-    .wordCount span {
-        padding-right: .4em;
-        text-transform: uppercase;
-        font-weight: 800;
-    }
-
-    .login-container {
-        position: relative;
-    }
-
-    .login-container ul {
-        display: inline-flex;
-        padding: 0 1em 0 1em;
-        margin-bottom: 0;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .login-container ul li {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        /*z-index:-1;*/ /*Hierdoor verdwijnen de tabs -achter- en niet -voor- de login-content*/
-        flex-grow: 1;
-        padding: 1em;
-        padding-bottom: 1.1em;
-
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-right: none;
-        border-bottom: none;
-        background-color: transparent;
-        color: #000000;
-        text-transform: lowercase;
-    }
-
-    .login-container ul li:first-child {
-        border-top-left-radius: 0.5em;
-    }
-
-    .login-container ul li:last-child {
-        border-top-right-radius: 0.5em;
-        /*Alle elementen missen een rechter border, behalve de last-child (dan krijg je tussen de elementen geen dubbele lijnen*/
-        border-right: 0.1em solid rgba(0, 0, 0, 0.3);
-    }
-
-    .login-container .activeTab {
-        position: relative;
-        z-index: 1; /*Zorgt ervoor dat de activeTab altijd bovenop de andere tabs ligt*/
-        background-color: #ffffff;
-        border-top-right-radius: 0.5em;
-        border-top-left-radius: 0.5em;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-bottom: 0;
-        margin: 0 -0.5em;
-        margin-bottom: 0.32em; /*Zorgt ervoor dat de onderkant van de activeTab net over de rand valt van de login content*/
-    }
-
-    /*Bij de eerste actieve tab is er geen margin met negatieve waarde, zodat deze net als de inactieve tabs achter
-    (of in dit geval -voor-) de login-content doorloopt. Border-rightstaat op none,
-    anders zie je dat het streepje in de login-content loopt*/
-    .login-container .activeTab:first-of-type {
-        margin-right: -0.5em;
-        margin-left: 0em;
-        border-right: none;
-        margin-bottom: 0;
-    }
-
-    /*Bij de laatste actieve tab is er geen margin met negatieve waarde, zodat deze net als de inactieve tabs achter
-    (of in dit geval -voor-) de login-content doorloopt. Border-left staat op none,
-    anders zie je dat het streepje in de login-content loopt*/
-    .login-container .activeTab:last-of-type {
-        margin-left: -0.5em;
-        margin-right: 0em;
-        border-left: none;
-        margin-bottom: 0;
-    }
-
-    .login-container .login-content {
-        padding: 1em;
-        margin: 1em;
-        margin-top: -0.4em;
-        background-color: #ffffff;
-        border-radius: 0.5em;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-    }
-
-    .login-container .login-content span {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 4em;
-        color: #ffffff;
-        background-color: #ff3268;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-bottom-left-radius: 0.5em;
-        border-top-left-radius: 0.5em;
-        border-right: none;
-    }
-
-    .login-container .login-content label {
-        display: flex;
-        margin-top: 1em;
-    }
-
-    .login-container input {
-        width: 100%;
-        height: 3em;
-        padding: 0 0.5em;
-        font-size: 1em;
-        background-color: transparent;
-        border: 0.1em solid rgba(0, 0, 0, 0.3);
-        border-bottom-right-radius: 0.5em;
-        border-top-right-radius: 0.5em;
-    }
-
-    .login-container input:focus {
-        outline: none;
-    }
-
-    .login-container .login-btn {
-        display: flex;
-        justify-content: center;
-        width: 25%;
-        min-width: 8em;
-        border-radius: 1.5em;
-        font-size: 1em;
-        height: 2em;
-        margin: 1.5em auto 1.5em auto;
-        text-transform: lowercase;
-        text-align: center;
-        color: #ffffff;
-        border: 0em solid rgba(0, 0, 0, 0.3);
-        border-bottom: 0.2em solid;
-
-        background-color: #ff3268;
-        border-color: #ca2b55;
-    }
-
-    .login-btn:active {
-        background-color: #ca2b55;
-    }
-
-    .login-container .register-btn {
-        display: none;
-    }
-
-    .login-container hr {
-        width: 100%;
-    }
-
-    .login-container .facebook-btn {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 25%;
-        min-width: 13em;
-        border-radius: 1.5em;
-        font-size: 1em;
-        height: 2em;
-        margin: 1.5em auto 1.5em auto;
-        text-transform: lowercase;
-        text-align: center;
-        color: #ffffff;
-        border: 0em solid rgba(0, 0, 0, 0.3);
-        border-bottom: 0.2em solid;
-
-        background-color: #3b5998;
-        border-color: #233a6a;
-    }
-
-    /*Of zoals je ontwerp (je moet alleen fa-2x toevoegen bij het facebookicoon in html:*/
-    .login-container .facebook-btn i {
-        margin-right: 0.5em;
-    }
-
-    .facebook-btn:active {
-        background-color: #233a6a;
-    }
+.notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    padding: 10px;
+    height: 50px;
+    opacity: 0;
+    transition-duration: 1.5s;
+    bottom: 1em;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+
+    color: white;
+    background-color: crimson;
 }
 
+.fa-check {
+    font-weight: 200;
+    margin-left:1em;
+    color: #00D66C;
+}
+
+.notification.active {
+    opacity: 1;
 }

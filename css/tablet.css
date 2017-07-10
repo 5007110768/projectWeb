@@ -1,0 +1,13 @@
+.posts article {
+      margin:.5em;
+      max-width:38em;
+      min-width:18em;
+      flex:1;
+
+  }
+
+  .posts {
+      display:flex;
+      flex-wrap:wrap;
+
+  }

@@ -1,0 +1,14 @@
+.posts {
+    min-width:18em;
+    display: flex;
+}
+
+.posts article {
+    margin:.5em;
+}
+
+.overview-container {
+    margin: auto;
+    padding: 1em;
+    color: #606060;
+}
