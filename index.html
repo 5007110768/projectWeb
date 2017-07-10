@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/media_queries.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link href="css/nexa.transfronter/stylesheet.css" rel="stylesheet">
@@ -33,48 +34,93 @@
         </span>
 
     </form>
+
     <section class="posts">
-        <article>
-            <span class="header lvl1">
-                <h2>Paranoia</h2>
-                <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
-            </span>
-            <section class="post">
-                <h3>Gepost op 21 April 2011 door <a class="linkPink" href="index.html">Molovich</a></h3>
-                <p>Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel aandacht. De mensen lopen over het stationsplein. Het voelt alsof er een grote, knipperende pijl boven m’n hoofd hangt: HIER LOOPT HIJ! </p>
-                <form action="paranoia.html"><button class="readBtn readPink">lees verder...</button></form>
-                <footer class="footerPost"><span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>6.2 min</span><span class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i>254</span><span class="wordCount"><span>abc:</span>811</span></footer>
-            </section>
+
+        <article class="post-container" onclick="flip(event)">
+            <div class="front">
+                <div class="img-container">
+                    <h2>Paranoia</h2>
+                    <img src="images/iPhone/para.png"/>
+                </div>
+            </div>
+
+            <div class="back">
+                <header class="header lvl1">
+                    <h2>Paranoia</h2>
+                    <i id="bookmark" class="fa fa-bookmark-o fa-2x icon" aria-hidden="true"></i>
+                </header>
+                <section class="post">
+                    <h3>Gepost op 21 April 2011 door <a class="linkPink" href="index.html">Molovich</a></h3>
+                    <p>Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel aandacht. De mensen lopen over het stationsplein. Het voelt alsof er een grote, knipperende pijl boven m’n hoofd
+                        hangt: HIER LOOPT HIJ! </p>
+                    <form action="paranoia.html">
+                        <button class="readBtn readPink">lees verder...</button>
+                    </form>
+                    <footer class="footerPost"><span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>6.2 min</span><span class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i>254</span><span class="wordCount"><span>abc:</span>811</span>
+                    </footer>
+                </section>
+
+            </div>
         </article>
 
-        <article>
-            <span class="header lvl2">
-                <h2>Hardboiled</h2>
-                <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
-            </span>
-            <section class="post">
-                <h3>Gepost op 08 Februari 2011 door <a class="linkGreen" href="index.html">Molovich</a></h3>
-                <p>Het is snikheet in die godverdomde bus. Stinkend zweet vermengd met de geur van klamme jassen en natte hond. Mijn zoon slaapt. Goddank. Een hardnekkige kater bonkt tegen mijn slapen. Flashback naar de avond ervoor. Een fles goedkope whiskey en oude kaaskoekjes.</p>
-                <form action="hardboiled.html"><button class="readBtn readGreen">lees verder...</button></form>
-                <footer class="footerPost"><span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>4.6 min</span><span class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i>103</span><span class="wordCount"><span>abc:</span>604</span></footer>
-            </section>
+        <article class="post-container" onclick="flip(event)">
+            <div class="front">
+                <div class="img-container">
+                    <h2>Hardboiled</h2>
+                    <img src="images/iPhone/hard.png"/>
+                </div>
+            </div>
+
+            <div class="back">
+                <header class="header lvl2">
+                    <h2>Hardboiled</h2>
+                    <i id="bookmark" class="fa fa-bookmark-o fa-2x icon" aria-hidden="true"></i>
+                </header>
+                <section class="post">
+                    <h3>Gepost op 08 Februari 2011 door <a class="linkGreen" href="index.html">Molovich</a></h3>
+                    <p>Het is snikheet in die godverdomde bus. Stinkend zweet vermengd met de geur van klamme jassen en natte hond. Mijn zoon slaapt. Goddank. Een hardnekkige kater bonkt tegen mijn slapen. Flashback naar de avond ervoor. Een fles goedkope whiskey en oude kaaskoekjes.</p>
+                    <form action="hardboiled.html"><button class="readBtn readGreen">lees verder...</button></form>
+                    <footer class="footerPost"><span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>4.6 min</span><span class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i>103</span><span class="wordCount"><span>abc:</span>604</span></footer>
+                </section>
+
+            </div>
         </article>
 
-        <article>
-            <span class="header lvl3"> <!-- Je hoeft alleen het lvl stuk aan te passen, de header class geeft algemene styling mee -->
-                <h2>Neerslachtig</h2>
-                <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
-            </span>
-            <section class="post">
-                <h3>Gepost op 11 juli 2011 door <a class="linkBlue" href="index.html">Molovich</a></h3>
-                <p>CAch en wee, ik stap de bus uit. Mijn zoon – in wat voor wereld heb ik die jongen neergezet – ligt vredig in zijn wagentje te slapen, vrij van kwade gedachten. Het regent en waait en dat is maar goed ook. Beter weer zou ongepast zijn. Het is druk op het stationsplein, de mensen kijken naar de grond.</p>
-                <form action="neerslachtig.html"><button class="readBtn readBlue">lees verder...</button></form>
-                <footer class="footerPost"><span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>3 min</span><span class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i>900</span><span class="wordCount"><span>abc:</span>275</span></footer>
-            </section>
+        <article class="post-container" onclick="flip(event)">
+            <div class="front">
+                <div class="img-container">
+                    <h2>Neerslachtig</h2>
+                    <img src="images/iPhone/neer.png"/>
+                </div>
+            </div>
+
+            <div class="back">
+                <header class="header lvl3">
+                    <h2>Neerslachtig</h2>
+                    <i id="bookmark" class="fa fa-bookmark-o fa-2x icon" aria-hidden="true"></i>
+                </header>
+                <section class="post">
+                    <h3>Gepost op 11 juli 2011 door <a class="linkBlue" href="index.html">Molovich</a></h3>
+                    <p>CAch en wee, ik stap de bus uit. Mijn zoon – in wat voor wereld heb ik die jongen neergezet – ligt vredig in zijn wagentje te slapen, vrij van kwade gedachten. Het regent en waait en dat is maar goed ook. Beter weer zou ongepast zijn. Het is druk op het stationsplein, de mensen kijken naar de grond.</p>
+                    <form action="neerslachtig.html"><button class="readBtn readBlue">lees verder...</button></form>
+                    <footer class="footerPost"><span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>3 min</span><span class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i>900</span><span class="wordCount"><span>abc:</span>275</span></footer>
+                </section>
+
+            </div>
         </article>
     </section>
+
+    <div class="notification">
+        <h3>Bericht opgeslagen!</h3>
+        <i class="fa fa-check" aria-hidden="true"></i>
+    </div>
+
 </div>
 
+<div></div>
+
+<script src="js/script.js"></script>
 </body>
 
 </html>
